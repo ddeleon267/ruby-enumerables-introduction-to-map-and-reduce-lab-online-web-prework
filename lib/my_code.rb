@@ -64,5 +64,6 @@ def reduce_to_all_true(arr)
 end
 
 def reduce_to_any_true(arr)
-  arr.any? {|el| el}
+  #arr.any? {|el| el}
+  !arr.all? {|el| !el}
 end
